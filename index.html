@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn jQuery</title>
+
+    <!--引用jQuery库-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+    </script>
+
+</head>
+<body>
+    <h1 id="h01" onclick="hidefun(this)">测试jQuery描述</h1>
+    <h2 class='ho2'>测试jQuery描述</h2>
+    <script>
+        function hidefun(obj) {
+            //alert('地阿娇')
+            x = document.getElementById('h01')
+            x.style.display = 'none'
+        }
+        function myFunction()
+        {
+            $("#h01").attr("style","color:red").html("Hello jQuery")
+            $('.ho2').attr('style','color:blue')
+
+          /*  $('h1').click(function disappear() {
+                $(this).hide()
+            })*/
+        }
+        $(document).ready(myFunction);
+    </script>
+</body>
+</html>
